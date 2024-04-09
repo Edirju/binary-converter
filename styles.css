@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --light-grey: #f5f6f7;
+  --dark-blue: #1b1b32;
+  --orange: #f1be32;
+  --clr-dark: #1e252c;
+  --clr-light: #f8fafb;
+  --clr-yellow: #ffc134;
+  --clr-red: #e3494a;
+  --font-heading: "Roboto", sans-serif;
+  --font-body: "Reddit Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--clr-dark);
+  letter-spacing: -0.0063rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--clr-light);
+  padding: 0 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.input-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.convert-btn {
+  background-color: var(--clr-yellow);
+  font-weight: 700;
+  letter-spacing: .0425rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.number-input {
+  height: 1.5625rem;
+}
+
+#result {
+  margin: 10px 0;
+  min-width: 200px;
+  width: fit-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid var(--clr-yellow);
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#animation-container {
+  margin: auto;
+  max-width: 300px;
+}
+
+.animation-frame {
+  margin: 250px auto 0;
+  padding: 15px 10px;
+  border: 5px solid var(--clr-yellow);
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+@media (width <=500px) {
+  h1 {
+    font-size: 1.5rem;
+    text-wrap: balance;
+    letter-spacing: normal;
+    line-height: 1.2;
+  }
+  .input-container {
+    flex-direction: column;
+  }
+}
+/* @media screen and (min-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .input-container {
+    flex-direction: row;
+  }
+
+  #result {
+    max-width: 460px;
+  }
+} */
+
+
